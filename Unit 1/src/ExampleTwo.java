@@ -7,9 +7,10 @@ public class ExampleTwo {
         // there are a small subset of characters that can be escaped.
         // but the AP exam will only test you on \", \n, and \\
 
-        System.out.println("This is \\\\a test.")
+        System.out.println("This is \\\\a test.");
 
-        System.out.println("ABCD\nEFGHIJK")
+        System.out.println("ABCD\nEFGHIJK");
+        System.out.println("this is a test");
     
 
         
