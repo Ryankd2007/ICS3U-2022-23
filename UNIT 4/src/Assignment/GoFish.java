@@ -103,11 +103,11 @@ public class GoFish {
 
     //computer's turn
     private static void computerTurn(int user) {
-        if (gameEnd = false) {
+        if (gameEnd == false) {
             int playerChosen = 0;
             while(true) {
                 playerChosen = (int) (Math.random()*4) + 1; // randomly choose the player that the computer wants to take a card from
-                if(playerChosen != user); //if the random player chosen is not the chooser, break the loop, if not, repeat the loop
+                if(playerChosen != user) //if the random player chosen is not the chooser, break the loop, if not, repeat the loop
                     break;
             }
             checkHand(playerChosen, user); 
