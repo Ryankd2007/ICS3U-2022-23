@@ -35,6 +35,7 @@ public class GoFish {
             computerTurn(computer1);
             computerTurn(computer2);
             computerTurn(computer3);
+            checkScore();
         }
     }
 
@@ -152,13 +153,14 @@ public class GoFish {
         }
 
         if(hasRequested) { //if the card that the chooser requested is in the targets hand
-            System.out.println("Target has " + card + "!");
 
             //if this person gets the card they wanted check to see if it made a pair
             if(chooser == player) checkPairs(playerHand + card + getSuit(), player);
             if(chooser == computer1) checkPairs(computerHand1 + card + getSuit(), computer1);
             if(chooser == computer2) checkPairs(computerHand2 + card + getSuit(), computer2);
             if(chooser == computer3) checkPairs(computerHand3 + card + getSuit(), computer3);
+
+            checkScore();
         } else { //if the target doesnt have the card
             System.out.println("Go fish!");
             //go fish! a random card is added to the chooser's hand from the deck, and then the new hand is checked for pairs
